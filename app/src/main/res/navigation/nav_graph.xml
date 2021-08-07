@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="it.uniroma2.mp.esonero.navigationdemo.fragment.transition.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first"
+        tools:ignore="ExtraText">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/navigation2"
+            app:enterAnim="@anim/from_right" />
+        <action
+            android:id="@+id/action_FirstFragment_to_third"
+            app:destination="@id/thirdfragment"
+            app:enterAnim="@anim/from_left" />
+        <action
+            android:id="@+id/action_FirstFragment_to_upfragment"
+            app:destination="@id/upfragment"
+            app:enterAnim="@anim/slide_down" />
+        <action
+            android:id="@+id/action_FirstFragment_to_downfragment"
+            app:destination="@id/downfragment"
+            app:enterAnim="@anim/slide_up" />
+
+    </fragment>
+
+
+    <navigation android:id="@+id/navigation2"
+        app:startDestination="@id/navigation">
+        <navigation
+            android:id="@+id/navigation"
+            app:startDestination="@id/SecondFragment">
+            <fragment
+                android:id="@+id/SecondFragment"
+                android:name="it.uniroma2.mp.esonero.navigationdemo.fragment.transition.SecondFragment"
+                android:label="@string/second_fragment_label"
+                tools:layout="@layout/fragment_second">
+
+                <action
+                    android:id="@+id/action_SecondFragment_to_FirstFragment"
+                    app:destination="@id/FirstFragment"
+                    app:enterAnim="@anim/from_left" />
+            </fragment>
+        </navigation>
+    </navigation>
+    <fragment
+        android:id="@+id/thirdfragment"
+        android:name="it.uniroma2.mp.esonero.navigationdemo.fragment.transition.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" >
+        <action
+            android:id="@+id/action_third_to_FirstFragment"
+            app:destination="@id/FirstFragment"
+            app:enterAnim="@anim/from_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/upfragment"
+        android:name="it.uniroma2.mp.esonero.navigationdemo.fragment.transition.UpFragment"
+        android:label="fragment_upfragment"
+        tools:layout="@layout/fragment_upfragment" >
+        <action
+            android:id="@+id/action_upfragment_to_FirstFragment"
+            app:destination="@id/FirstFragment"
+            app:enterAnim="@anim/slide_down" />
+    </fragment>
+    <fragment
+        android:id="@+id/downfragment"
+        android:name="it.uniroma2.mp.esonero.navigationdemo.fragment.transition.Downfragment"
+        android:label="fragment_downfragment"
+        tools:layout="@layout/fragment_downfragment" >
+        <action
+            android:id="@+id/action_downfragment_to_FirstFragment"
+            app:destination="@id/FirstFragment"
+            app:enterAnim="@anim/slide_up" />
+    </fragment>
+
+</navigation>
+
+
+
+
+
+
