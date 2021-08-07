@@ -17,4 +17,13 @@
     <string name="transitionleft_slideright_button">Scorri a Destra</string>
     <string name="transitionright_title_text">Destra</string>
     <string name="transitionright_slideleft_button">Scorri a Sinistra</string>
+    <string name="firststep_insertname_label">Prergo, inserisci il tuo nome</string>
+    <string name="firststep_name_label">Nome</string>
+    <string name="secondstep_insertage_label">Prego, inserisci la tua età</string>
+    <string name="secondstep_age_label">Età</string>
+    <string name="common_next_button">Avanti</string>
+    <string name="thirdstep_recap_label">Grazie, di seguito i dati inseriti:</string>
+    <string name="basenavigation_description_label">Per avviare una semplice demo sulla navigation, premi il pulsante qui sotto</string>
+    <string name="basenavigation_start_button">Avvia</string>
+    <string name="secondstep_validationerror_message">Dato non valido</string>
 </resources>

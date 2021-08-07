@@ -9,18 +9,23 @@
         android:id="@+id/baseNavigationMainFragmentTab"
         android:name="it.uniroma2.mp.esonero.navigationdemo.fragment.BaseNavigationMainFragment"
         android:label="fragment_base_navigation_main"
-        tools:layout="@layout/fragment_base_navigation_main" />
+        tools:layout="@layout/fragment_base_navigation_main">
+        <action
+            android:id="@+id/action_baseNavigationMainFragmentTab_to_baseNavigationGraph"
+            app:destination="@id/baseNavigationGraph" />
+    </fragment>
     <fragment
         android:id="@+id/transitionsMainFragmentTab"
         android:name="it.uniroma2.mp.esonero.navigationdemo.fragment.TransitionsMainFragment"
         android:label="fragment_transitions_main"
-        tools:layout="@layout/fragment_transitions_main" >
+        tools:layout="@layout/fragment_transitions_main">
         <action
             android:id="@+id/action_transitionsMainFragment_to_TransitionGraph"
             app:destination="@id/transitionsGraph" />
     </fragment>
 
-    <navigation android:id="@+id/transitionsGraph"
+    <navigation
+        android:id="@+id/transitionsGraph"
         app:startDestination="@id/TransitionsHome">
         <fragment
             android:id="@+id/LeftFragment"
@@ -84,6 +89,39 @@
                 android:id="@+id/action_DownFragment_to_TransitionHome"
                 app:destination="@id/TransitionsHome"
                 app:enterAnim="@anim/slide_up" />
+        </fragment>
+    </navigation>
+    <navigation
+        android:id="@+id/baseNavigationGraph"
+        app:startDestination="@id/firstStepFragment">
+        <fragment
+            android:id="@+id/secondStepFragment"
+            android:name="it.uniroma2.mp.esonero.navigationdemo.fragment.basenavigation.SecondStepFragment"
+            android:label="fragment_second_step"
+            tools:layout="@layout/fragment_second_step">
+            <action
+                android:id="@+id/action_secondStepFragment_to_thirdStepFragment"
+                app:destination="@id/thirdStepFragment" />
+
+        </fragment>
+        <fragment
+            android:id="@+id/firstStepFragment"
+            android:name="it.uniroma2.mp.esonero.navigationdemo.fragment.basenavigation.FirstStepFragment"
+            android:label="fragment_first_step"
+            tools:layout="@layout/fragment_first_step">
+            <action
+                android:id="@+id/action_firstStepFragment_to_secondStepFragment"
+                app:destination="@id/secondStepFragment" />
+
+        </fragment>
+        <fragment
+            android:id="@+id/thirdStepFragment"
+            android:name="it.uniroma2.mp.esonero.navigationdemo.fragment.basenavigation.ThirdStepFragment"
+            android:label="fragment_third_step"
+            tools:layout="@layout/fragment_third_step">
+            <argument
+                android:name="user"
+                app:argType="it.uniroma2.mp.esonero.navigationdemo.model.User" />
         </fragment>
     </navigation>
 

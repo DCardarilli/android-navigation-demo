@@ -16,5 +16,13 @@
     <string name="transitionleft_slideright_button">Slide Right</string>
     <string name="transitionright_title_text">Right</string>
     <string name="transitionright_slideleft_button">Slide Left</string>
-
+    <string name="firststep_insertname_label">Please, insert your name</string>
+    <string name="firststep_name_label">Name</string>
+    <string name="secondstep_insertage_label">Please, insert your age</string>
+    <string name="secondstep_age_label">Age</string>
+    <string name="common_next_button">Next</string>
+    <string name="thirdstep_recap_label">Thanks, your data below:</string>
+    <string name="basenavigation_description_label">To start a simple navigation demo, click on the button below</string>
+    <string name="basenavigation_start_button">Start</string>
+    <string name="secondstep_validationerror_message">Invalid data</string>
 </resources>

@@ -4,28 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="it.uniroma2.mp.esonero.navigationdemo.fragment.BaseNavigationMainFragment">
+    tools:context=".fragment.basenavigation.FirstStepFragment">
 
     <TextView
-        android:id="@+id/tvBaseDescription"
+        android:id="@+id/tvInsertName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
-        android:text="@string/basenavigation_description_label"
+        android:layout_marginBottom="24dp"
+        android:text="@string/firststep_insertname_label"
+        app:layout_constraintBottom_toTopOf="@+id/etName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:labelFor="@+id/etName" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnStart"
+        android:id="@+id/btnNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/basenavigation_start_button"
+        android:layout_marginTop="8dp"
+        android:text="@string/common_next_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvBaseDescription" />
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
