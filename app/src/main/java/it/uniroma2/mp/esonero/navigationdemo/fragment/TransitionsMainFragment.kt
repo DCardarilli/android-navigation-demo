@@ -1,25 +1,25 @@
-package it.uniroma2.mp.esonero.navigationdemo.fragment.transition
+package it.uniroma2.mp.esonero.navigationdemo.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import it.uniroma2.mp.esonero.navigationdemo.R
-import it.uniroma2.mp.esonero.navigationdemo.databinding.FragmentTransitionsUpBinding
+import it.uniroma2.mp.esonero.navigationdemo.databinding.FragmentTransitionsMainBinding
 
-class UpFragment : Fragment() {
 
-    private lateinit var binding: FragmentTransitionsUpBinding
+class TransitionsMainFragment : Fragment() {
+
+    private lateinit var binding: FragmentTransitionsMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = FragmentTransitionsUpBinding.inflate(layoutInflater)
+        binding = FragmentTransitionsMainBinding.inflate(layoutInflater);
 
-        binding.btnAction.setOnClickListener {
-            findNavController().navigate(R.id.action_UpFragment_to_TransitionHome)
+        binding.btnStartGame.setOnClickListener {
+            findNavController().navigate(R.id.action_transitionsMainFragment_to_TransitionGraph)
         }
     }
 
@@ -27,7 +27,7 @@ class UpFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return binding.root
+        return binding.root;
     }
 
 }

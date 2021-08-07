@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Android Navigation Demo</string>
+    <string name="transitions_button_right">Vai a destra</string>
+    <string name="transitions_button_up">Vai su</string>
+    <string name="transitions_button_down">Vai giù</string>
+    <string name="transitions_button_left">Vai a sinistra</string>
+    <string name="main_navigation_base_tabbutton">Navigazione Base</string>
+    <string name="main_transitions_tabbutton">Transizioni</string>
+    <string name="transitions_description_text">Clicca avvia per aprire la demo delle transizioni</string>
+    <string name="transitions_start_button">Avvia</string>
+    <string name="transitiondown_title_text">Giù</string>
+    <string name="transitiondown_slideup_button">Scorri Su</string>
+    <string name="transitionup_title_text">Su</string>
+    <string name="transitionup_slidedown_button">Scorri Giù</string>
+    <string name="transitionleft_title_text">Sinistra</string>
+    <string name="transitionleft_slideright_button">Scorri a Destra</string>
+    <string name="transitionright_title_text">Destra</string>
+    <string name="transitionright_slideleft_button">Scorri a Sinistra</string>
+</resources>

@@ -1,4 +1,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="it.uniroma2.mp.esonero.navigationdemo.MainActivity"/>
+    tools:context="it.uniroma2.mp.esonero.navigationdemo.MainActivity">
+    <item
+        android:id="@+id/baseNavigationMainFragmentTab"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/main_navigation_base_tabbutton" />
+
+    <item
+        android:id="@+id/transitionsMainFragmentTab"
+        android:icon="@drawable/ic_baseline_open_with_24"
+        android:title="@string/main_transitions_tabbutton" />
+</menu>

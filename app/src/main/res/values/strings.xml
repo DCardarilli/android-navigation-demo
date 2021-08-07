@@ -1,15 +1,20 @@
 <resources>
     <string name="app_name">Android Navigation Demo</string>
-    <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="transitions_button_right">Go right</string>
+    <string name="transitions_button_up">Go up</string>
+    <string name="transitions_button_down">Go down</string>
+    <string name="transitions_button_left">Go left</string>
+    <string name="main_navigation_base_tabbutton">Navigation Base</string>
+    <string name="main_transitions_tabbutton">Transitions</string>
+    <string name="transitions_description_text">Click start to open transitions demo</string>
+    <string name="transitions_start_button">Start</string>
+    <string name="transitiondown_title_text">Down</string>
+    <string name="transitiondown_slideup_button">Slide Up</string>
+    <string name="transitionup_title_text">Up</string>
+    <string name="transitionup_slidedown_button">Slide Down</string>
+    <string name="transitionleft_title_text">Left</string>
+    <string name="transitionleft_slideright_button">Slide Right</string>
+    <string name="transitionright_title_text">Right</string>
+    <string name="transitionright_slideleft_button">Slide Left</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="destra">Destra</string>
 </resources>

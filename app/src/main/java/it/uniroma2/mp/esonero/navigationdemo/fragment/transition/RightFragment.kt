@@ -4,22 +4,21 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import it.uniroma2.mp.esonero.navigationdemo.R
-import it.uniroma2.mp.esonero.navigationdemo.databinding.FragmentTransitionsUpBinding
+import it.uniroma2.mp.esonero.navigationdemo.databinding.FragmentTransitionsRightBinding
 
-class UpFragment : Fragment() {
+class RightFragment : Fragment() {
 
-    private lateinit var binding: FragmentTransitionsUpBinding
+    private lateinit var binding: FragmentTransitionsRightBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = FragmentTransitionsUpBinding.inflate(layoutInflater)
+        binding = FragmentTransitionsRightBinding.inflate(layoutInflater)
 
         binding.btnAction.setOnClickListener {
-            findNavController().navigate(R.id.action_UpFragment_to_TransitionHome)
+            findNavController().navigate(R.id.action_RightFragment_to_TransitionHome)
         }
     }
 
