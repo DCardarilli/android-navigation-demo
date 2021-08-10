@@ -26,4 +26,6 @@
     <string name="basenavigation_description_label">Per avviare una semplice demo sulla navigation, premi il pulsante qui sotto</string>
     <string name="basenavigation_start_button">Avvia</string>
     <string name="secondstep_validationerror_message">Dato non valido</string>
+    <string name="deeplinkfragment_description_message">Sei arrivato qui tramite deeplink!</string>
+    <string name="deeplinkparamsfragment_description_message">Sei arrivato qui tramite deeplink! Il tuo nome è:</string>
 </resources>

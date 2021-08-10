@@ -124,6 +124,27 @@
                 app:argType="it.uniroma2.mp.esonero.navigationdemo.model.User" />
         </fragment>
     </navigation>
+    <fragment
+        android:id="@+id/deeplinkDemoFragment"
+        android:name="it.uniroma2.mp.esonero.navigationdemo.fragment.deeplink.DeeplinkDemoFragment"
+        android:label="fragment_deeplink_demo"
+        tools:layout="@layout/fragment_deeplink_demo">
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="https://esempio.it/demo" />
+    </fragment>
+    <fragment
+        android:id="@+id/deeplinkParamsDemoFragment"
+        android:name="it.uniroma2.mp.esonero.navigationdemo.fragment.deeplink.DeeplinkParamsDemoFragment"
+        android:label="fragment_deeplink_params_demo"
+        tools:layout="@layout/fragment_deeplink_params_demo">
+        <deepLink
+            android:id="@+id/deepLink2"
+            app:uri="https://esempio.it/paramtest?name={name}" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
 
 </navigation>
 

@@ -25,4 +25,6 @@
     <string name="basenavigation_description_label">To start a simple navigation demo, click on the button below</string>
     <string name="basenavigation_start_button">Start</string>
     <string name="secondstep_validationerror_message">Invalid data</string>
+    <string name="deeplinkfragment_description_message">You landed here from deeplink!</string>
+    <string name="deeplinkparamsfragment_description_message">You landed here from deeplink! Your name is:</string>
 </resources>
